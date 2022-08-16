@@ -1,57 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Mentor | Stats preview card component</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
-
-
-
+  <title>Stats preview card component</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 </head>
 <body>
 
-   <div id="container">
-    <div class="box">
-        <div class="text">
-            <h1>
-                Get <span style="color:  hsl(277, 64%, 61%);">insights</span> that help your business grow.
-            </h1>
-            
-            <p>
-                Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-                experience, and overall efficiency.
-            </p>
-
-            <div>
-                <table>
-                    <tr>
-                        <th><h2>10K+</h2></th>
-                        <th><h2>314</h2></th>
-                        <th><h2>12M+</h2></th>
-                    </tr>
-                    <tr>
-                        <td>COMPANIES</td>
-                        <td>TEMPLATES</td>
-                        <td>QUERIES</td>
-                    </tr>
-                </table>
-            </div>
+  <main>
+    <div class="card">
+      <div class="card__content">
+        <h1 class="card__title">Get <span class="color-text">insights</span> that help your business grow.</h1>
+        <p class="card__description">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+        <div class="card__status">
+          <div>
+            <h3>10k+</h3>
+            <span>Companies</span>
+          </div>
+          <div>
+            <h3>314</h3>
+            <span>Templates</span>
+          </div>
+          <div>
+            <h3>12M+</h3>
+            <span>Queries</span>
+          </div>
         </div>
-        <div class="img">
-            <img src="assets/images/image-header-desktop.jpg" alt="">
-        </div>
+      </div>
+      <div class="card__img">
+        <picture>
+          <source srcset="assets/images/image-header-desktop.jpg" media="(min-width: 800px)">
+          <img src="assets/images/image-header-mobile.jpg" alt="Enterprise">
+        </picture>
+      </div>
     </div>
-   </div>
-    
+  </main>
+
 </body>
 </html>
