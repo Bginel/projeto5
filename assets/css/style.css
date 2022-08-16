@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+	--Very-dark-blue: hsl(233, 47%, 7%);
+	--Dark-desaturated-blue: hsl(244, 38%, 16%);
+	--Soft-violet: hsl(277, 64%, 61%);
+	--White: hsl(0, 0%, 100%);
+	--Slightly-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+	--Slightly-transparent-white-h: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	color: var(--White);
+	font-family: "Inter", sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--Very-dark-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1;
+	margin: 16px 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.card {
+	display: flex;
+	max-width: 327px;
+	margin: auto;
+	border-radius: 10px;
+	flex-direction: column-reverse;
+	background-color: var(--Dark-desaturated-blue);
+}
+
+.card__content,
+.card__img {
+	flex: 0 0 50%;
+}
+
+.card__content {
+	text-align: center;
+	padding: 25px 30px;
+}
+
+.card__title {
+	font-size: 28px;
+	line-height: 1.15;
+}
+
+.color-text {
+	color: var(--Soft-violet);
+}
+
+.card__description {
+	color: var(--Slightly-transparent-white-p);
+	font-size: 15px;
+	line-height: 1.65;
+}
+
+.card__status {
+	display: flex;
+	gap: 25px 30px;
+	margin: 40px 0 10px;
+	flex-direction: column;
+}
+.card__status h3 {
+	font-size: 24px;
+	margin: 3.5px 0;
+}
+.card__status span {
+	color: var(--Slightly-transparent-white-h);
+	font-size: 13px;
+	font-family: "Lexend Deca", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+
+.card__img {
+	position: relative;
+}
+.card__img::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	mix-blend-mode: multiply;
+	background-color: var(--Soft-violet);
+}
+
+.card__img img {
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	filter: contrast(60%) brightness(125%);
+}
+
+@media screen and (min-width: 800px) {
+	.card {
+		max-width: 750px;
+		flex-direction: row;
+	}
+
+	.card__content {
+		text-align: left;
+	}
+
+	.card__status {
+		flex-direction: row;
+	}
+	.card__status h3 {
+		font-size: 20px;
+	}
+
+	.card__img img {
+		width: 100%;
+		height: 100%;
+		border-radius: 0 10px 10px 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.card {
+		max-width: 1113px;
+	}
+
+	.card__content {
+		padding: 50px 70px;
+	}
+
+	.card__title {
+		font-size: 36px;
+		line-height: 1.23;
+	}
+
+	.card__description {
+		margin: 24px 0;
+		line-height: 1.67;
+	}
+
+	.card__content {
+		padding: 56px 110px 56px 72px;
+		flex-basis: 51.35%;
+	}
+
+	.card__img {
+		flex-basis: 48.65%;
+	}
+
+	.card__status {
+		column-gap: 65px;
+		margin: 72px 0 10px;
+	}
+	.card__status h3 {
+		font-size: 24px;
+	}
+}
