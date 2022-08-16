@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](#)
-- Live Site URL: [live Site](#)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/criado-usando-html-e-css-JXydo-4TSq)
+- Live Site URL: [live Site](https://james-alderson.github.io/Fork__Bginel--SPCC/)
 
 ## My process
 
